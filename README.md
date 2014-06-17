@@ -14,4 +14,4 @@ cordova plugin rm com.phonegap.plugins.natiesettings
 
 #Using the plugin
 
-cordova.plugins.natiesettings.open(sucess_callback,failure_callback);
+cordova.plugins.natiesettings.open(success_callback,failure_callback);
