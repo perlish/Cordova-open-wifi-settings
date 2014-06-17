@@ -1,3 +1,10 @@
+#Warning
+Plugin is still in development. Now can only open gps settings on android. 
+Next release: 
+* port to iOS
+* selection page to open (wifi/newtork..)
+* callbacks
+  
 #NativeSettings plugin for Android Cordova.
 
 The plugin allow you to open settings view from Android Cordova application. Based on https://github.com/raulduran/VideoPlayer.
