@@ -8,6 +8,8 @@
 
 package com.phonegap.plugins.nativesettings;
 
+import org.json.JSONArray;
+
 import android.content.Intent;
 import android.content.Context;
 
