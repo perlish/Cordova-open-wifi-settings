@@ -17,11 +17,11 @@
 
 	<!-- android -->
 	<platform name="android">
-		<source-file src="src/android/NativeSettings.java" target-dir="src/com/phonegap/plugins/settings" />
+		<source-file src="src/android/NativeSettings.java" target-dir="src/com/phonegap/plugins/nativesettings" />
 
 		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="GpsEnable">
-				<param name="android-package" value="com.phonegap.plugins.natiesettings.NativeSettings" />
+			<feature name="NativeSettings">
+				<param name="android-package" value="com.phonegap.plugins.nativesettings.NativeSettings" />
 			</feature>
 		</config-file>
 	</platform>    
