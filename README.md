@@ -1,7 +1,6 @@
-#NativeSettings plugin for Android Cordova 3.0 
+#NativeSettings plugin for Android Cordova.
 
-The plugin allow you to open settings view from Android Cordova application. 
-
+The plugin allow you to open settings view from Android Cordova application. Based on https://github.com/raulduran/VideoPlayer.
 This command fires an Intent to have your devices to show the settings.
 
 #Adding the Plugin to your project
