@@ -8,6 +8,8 @@
 
 package com.phonegap.plugins.settings;
 
+import java.io.IOException;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 
