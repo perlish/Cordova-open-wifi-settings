@@ -3,7 +3,7 @@ var exec = require("cordova/exec");
 function NativeSettings() {
 }
 
-GpsEnable.prototype.open = function(onsucess, onfail) {
+NativeSettings.prototype.open = function(onsucess, onfail) {
 	exec(onsucess, onfail, "NativeSettings", "open", []);
 };
 
