@@ -1,6 +1,6 @@
 #Warning
 Plugin is still in development. Now can only open gps settings on android. 
-Next release: 
+##Next release: 
 * port to iOS
 * selection page to open (wifi/newtork..)
 * callbacks
