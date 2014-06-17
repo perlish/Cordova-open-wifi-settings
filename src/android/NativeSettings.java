@@ -6,12 +6,7 @@
  * Copyright (c) 2011, IBM Corporation
  */
 
-package com.phonegap.plugins.settings;
-
-import java.io.IOException;
-
-import org.json.JSONArray;
-import org.json.JSONException;
+package com.phonegap.plugins.nativesettings;
 
 import android.content.Intent;
 import android.content.Context;
