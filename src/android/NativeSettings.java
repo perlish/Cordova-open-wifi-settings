@@ -28,7 +28,7 @@ public class NativeSettings extends CordovaPlugin {
 
  
         if (action.equals("open")) {
-            this.cordova.getActivity().startActivity(new Intent(com.android.settings.wifi.WifiSettings));
+            this.cordova.getActivity().startActivity(new Intent(com.android.settings.WIRELESS_SETTINGS));
         }
         else {
              status = PluginResult.Status.INVALID_ACTION;
