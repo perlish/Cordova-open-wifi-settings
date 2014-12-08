@@ -1,6 +1,6 @@
 //
-//  SettingsPlugin.m
-//  SettingsPlugin
+//  NativeSettings.m
+//  NativeSettings
 //
 //  Created by selahssea on 05.12.14.
 //

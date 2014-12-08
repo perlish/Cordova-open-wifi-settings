@@ -1,6 +1,6 @@
 //
-//  SettingsPlugin.h
-//  SettingsPlugin
+//  NativeSettings.h
+//  NativeSettings
 //
 //  Created by selahssea on 05.12.14.
 //
