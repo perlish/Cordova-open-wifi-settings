@@ -46,7 +46,7 @@ public class NativeSettings extends CordovaPlugin {
         } else if (action.equals("application")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_SETTINGS));
         } else if (action.equals("battery_saver")) {
-            this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_BATTERY_SAVER_SETTINGS));
+            this.cordova.getActivity().startActivity(new Intent(android.settings.BATTERY_SAVER_SETTINGS));
         } else if (action.equals("bluetooth")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS));
         } else if (action.equals("captioning")) {
@@ -90,7 +90,7 @@ public class NativeSettings extends CordovaPlugin {
         } else if (action.equals("nfc_settings")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_NFC_SETTINGS));
         } else if (action.equals("notification_listner")) {
-            this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS));
+            this.cordova.getActivity().startActivity(new Intent(android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS));
         } else if (action.equals("print")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_PRINT_SETTINGS));
         } else if (action.equals("privacy")) {
