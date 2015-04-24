@@ -15,53 +15,57 @@ cordova plugin rm com.phonegap.plugins.nativesettingsopener
 cordova.plugins.settings.open(success_callback,failure_callback);
 
 #Android Settings
-param settingName one of
- "open" (location_source)
- "accessibility"
- "add_account"
- "airplane_mode"
- "apn"
- "application_details"
- "application_development"
- "application"
- "battery_saver"
- "bluetooth"
- "captioning"
- "cast"
- "data_roaming"
- "date"
- "device_info"
- "display"
- "dream"
- "home"
- "input_method"
- "input_method_subtype"
- "internal_storage"
- "locale"
- "location_source"
- "manage_all_applications"
- "manage_applications"
- "memory_card"
- "network_operator"
- "nfcsharing"
- "nfc_payment"
- "nfc_settings"
- "notification_listner"
- "print"
- "privacy"
- "quick_launch"
- "search"
- "security"
- "settings"
- "show_regulatory_info"
- "sound"
- "sync"
- "usage_access"
- "user_dictionary"
- "voice_input"
- "wifi_ip"
- "wifi"
- "wireless"
+
+Select one of the options below for the param settingName
+```js
+var settingNames = array(
+ "open",
+ "accessibility",
+ "add_account",
+ "airplane_mode",
+ "apn",
+ "application_details",
+ "application_development",
+ "application",
+ "battery_saver",
+ "bluetooth",
+ "captioning",
+ "cast",
+ "data_roaming",
+ "date",
+ "device_info",
+ "display",
+ "dream",
+ "home",
+ "input_method",
+ "input_method_subtype",
+ "internal_storage",
+ "locale",
+ "location_source",
+ "manage_all_applications",
+ "manage_applications",
+ "memory_card",
+ "network_operator",
+ "nfcsharing",
+ "nfc_payment",
+ "nfc_settings",
+ "notification_listner",
+ "print",
+ "privacy",
+ "quick_launch",
+ "search",
+ "security",
+ "settings",
+ "show_regulatory_info",
+ "sound",
+ "sync",
+ "usage_access",
+ "user_dictionary",
+ "voice_input",
+ "wifi_ip",
+ "wifi",
+ "wireless");
+```
 
 ```js
 cordova.plugins.settings.openSettings(settingName, success_callback,failure_callback);
