@@ -4,7 +4,7 @@ The plugin allow you to open Location Settings view from Android Cordova applica
 
 #Adding the Plugin to your project
 
-cordova plugin add https://github.com/selahssea/Cordova-open-native-settings.git
+cordova plugin add https://github.com/deefactorial/Cordova-open-native-settings.git
 
 #Removing the Plugin to your project
 
@@ -13,3 +13,56 @@ cordova plugin rm com.phonegap.plugins.nativesettingsopener
 #Using the plugin
 
 cordova.plugins.settings.open(success_callback,failure_callback);
+
+#Android Settings
+param settingName one of
+ "open" (location_source)
+ "accessibility"
+ "add_account"
+ "airplane_mode"
+ "apn"
+ "application_details"
+ "application_development"
+ "application"
+ "battery_saver"
+ "bluetooth"
+ "captioning"
+ "cast"
+ "data_roaming"
+ "date"
+ "device_info"
+ "display"
+ "dream"
+ "home"
+ "input_method"
+ "input_method_subtype"
+ "internal_storage"
+ "locale"
+ "location_source"
+ "manage_all_applications"
+ "manage_applications"
+ "memory_card"
+ "network_operator"
+ "nfcsharing"
+ "nfc_payment"
+ "nfc_settings"
+ "notification_listner"
+ "print"
+ "privacy"
+ "quick_launch"
+ "search"
+ "security"
+ "settings"
+ "show_regulatory_info"
+ "sound"
+ "sync"
+ "usage_access"
+ "user_dictionary"
+ "voice_input"
+ "wifi_ip"
+ "wifi"
+ "wireless"
+
+```js
+cordova.plugins.settings.openSettings(settingName, success_callback,failure_callback);
+```
