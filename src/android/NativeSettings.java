@@ -45,9 +45,11 @@ public class NativeSettings extends CordovaPlugin {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS));
         } else if (action.equals("application")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_SETTINGS));
-        } else if (action.equals("battery_saver")) {
-            this.cordova.getActivity().startActivity(new Intent(android.settings.BATTERY_SAVER_SETTINGS));
-        } else if (action.equals("bluetooth")) {
+        }
+        //else if (action.equals("battery_saver")) {
+        //    this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_BATTERY_SAVER_SETTINGS));
+        //}
+        else if (action.equals("bluetooth")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS));
         } else if (action.equals("captioning")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_CAPTIONING_SETTINGS));
@@ -89,9 +91,11 @@ public class NativeSettings extends CordovaPlugin {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_NFC_PAYMENT_SETTINGS));
         } else if (action.equals("nfc_settings")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_NFC_SETTINGS));
-        } else if (action.equals("notification_listner")) {
-            this.cordova.getActivity().startActivity(new Intent(android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS));
-        } else if (action.equals("print")) {
+        }
+        //else if (action.equals("notification_listner")) {
+        //    this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS));
+        //}
+        else if (action.equals("print")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_PRINT_SETTINGS));
         } else if (action.equals("privacy")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_PRIVACY_SETTINGS));
