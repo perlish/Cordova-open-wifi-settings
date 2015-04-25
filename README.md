@@ -71,7 +71,7 @@ cordova.plugins.settings.openSetting(settingName, success_callback,failure_callb
 
 #example
 
-```
+```js
 if(typeof cordova.plugins.settings.openSetting != undefined)
     cordova.plugins.settings.openSetting("nfc_settings", function(){console.log("opened nfc settings")},function(){console.log("failed to open nfc settings")});
 ```
