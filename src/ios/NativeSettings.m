@@ -12,10 +12,8 @@
 
 - (void)open:(CDVInvokedUrlCommand*)command
 {
-        if (&UIApplicationOpenSettingsURLString != NULL) {
-            NSURL *appSettings = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
-            [[UIApplication sharedApplication] openURL:appSettings];
-        }
+        NSURL *appSettings = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        [[UIApplication sharedApplication] openURL:appSettings];
 }
 
 @end
