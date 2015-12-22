@@ -12,6 +12,7 @@ import org.json.JSONArray;
 
 import android.content.Intent;
 import android.content.Context;
+import android.net.Uri;
 
 import android.provider.Settings;
 
@@ -24,6 +25,7 @@ public class NativeSettings extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
         PluginResult.Status status = PluginResult.Status.OK;
+        Uri packageUri = Uri.parse("package:" + this.cordova.getActivity().getPackageName());
         String result = "";
 
         //Information on settings can be found here:
@@ -40,7 +42,7 @@ public class NativeSettings extends CordovaPlugin {
         } else if (action.equals("apn")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_APN_SETTINGS));
         } else if (action.equals("application_details")) {
-            this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS));
+            this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS, packageUri));
         } else if (action.equals("application_development")) {
             this.cordova.getActivity().startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS));
         } else if (action.equals("application")) {
