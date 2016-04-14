@@ -1,24 +1,42 @@
 #NativeSettings plugin for Android and iOS 8 Cordova.
 
-The plugin allow you to open Location Settings view from Android Cordova application and to open Native App settings view from iOS 8 Cordova application. Based on https://github.com/raulduran/VideoPlayer.
+The plugin allows you to open Settings view from Android Cordova application and to open Native App settings view from iOS 8 Cordova application. Based on https://github.com/raulduran/VideoPlayer.
 
 #Adding the Plugin to your project
 
-cordova plugin add https://github.com/deefactorial/Cordova-open-native-settings.git
+```bash
+cordova plugin add https://github.com/selahssea/Cordova-open-native-settings.git
+```
 
 #Removing the Plugin to your project
 
+```bash
 cordova plugin rm com.phonegap.plugins.nativesettingsopener
+```
 
-#Using the plugin
+#Using the plugin (opens Location Settings in Android and Application Settings in iOS)
 
-cordova.plugins.settings.open(success_callback,failure_callback);
+```
+cordova.plugins.settings.open(success_callback, failure_callback);
+```
+
+#Example for iOS and Android
+
+```js
+if(typeof cordova.plugins.settings.openSetting != undefined){
+    cordova.plugins.settings.open(function(){
+            console.log("opened nfc settings")
+        },
+        function(){
+            console.log("failed to open nfc settings")
+        });
+}
+```
 
 #Android Settings
 
 Select one of the options below for the param settingName
-```js
-var settingNames = array(
+```
     "open",
     "accessibility",
     "add_account",
@@ -62,16 +80,22 @@ var settingNames = array(
     "voice_input",
     "wifi_ip",
     "wifi",
-    "wireless");
+    "wireless"
 ```
 
-```js
-cordova.plugins.settings.openSetting(settingName, success_callback,failure_callback);
+```
+cordova.plugins.settings.openSetting(settingName, success_callback, failure_callback);
 ```
 
-#example
+#Example for Android
 
 ```js
-if(typeof cordova.plugins.settings.openSetting != undefined)
-    cordova.plugins.settings.openSetting("nfc_settings", function(){console.log("opened nfc settings")},function(){console.log("failed to open nfc settings")});
+if(typeof cordova.plugins.settings.openSetting != undefined){
+    cordova.plugins.settings.openSetting("nfc_settings", function(){
+            console.log("opened nfc settings")
+        },
+        function(){
+            console.log("failed to open nfc settings")
+        });
+}
 ```
