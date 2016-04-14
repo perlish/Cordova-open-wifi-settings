@@ -2,25 +2,25 @@
 
 The plugin allows you to open Settings view from Android Cordova application and to open Native App settings view from iOS 8 Cordova application. Based on https://github.com/raulduran/VideoPlayer.
 
-#Adding the Plugin to your project
+##Adding the Plugin to your project
 
 ```bash
 cordova plugin add https://github.com/selahssea/Cordova-open-native-settings.git
 ```
 
-#Removing the Plugin to your project
+##Removing the Plugin to your project
 
 ```bash
 cordova plugin rm com.phonegap.plugins.nativesettingsopener
 ```
 
-#Using the plugin (opens Location Settings in Android and Application Settings in iOS)
+##Using the plugin (opens Location Settings in Android and Application Settings in iOS)
 
 ```
 cordova.plugins.settings.open(success_callback, failure_callback);
 ```
 
-#Example for iOS and Android
+###Example for iOS and Android
 
 ```js
 if(typeof cordova.plugins.settings.openSetting != undefined){
@@ -33,7 +33,7 @@ if(typeof cordova.plugins.settings.openSetting != undefined){
 }
 ```
 
-#Android Settings
+##Android Settings
 
 Select one of the options below for the param settingName
 ```
@@ -83,11 +83,13 @@ Select one of the options below for the param settingName
     "wireless"
 ```
 
+##Using the plugin for Android
+
 ```
 cordova.plugins.settings.openSetting(settingName, success_callback, failure_callback);
 ```
 
-#Example for Android
+###Example for Android
 
 ```js
 if(typeof cordova.plugins.settings.openSetting != undefined){
